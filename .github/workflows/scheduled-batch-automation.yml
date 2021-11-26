@@ -1,5 +1,7 @@
-name: scheduled-batch-automation
-on: [push]
+name: scheduled-test-time
+on: 
+  schedule:
+    - cron: 8 17 * * *
 jobs:
   run-main-script:
     runs-on: ubuntu-latest
@@ -8,4 +10,4 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-      - run: node main.js
+      - run: node test-time/main.js
