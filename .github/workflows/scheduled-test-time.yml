@@ -1,7 +1,8 @@
 name: scheduled-test-time
 on: 
   schedule:
-    - cron: "*/5 * * * *"
+  - cron: '*/5 * * * *'
+
 jobs:
   run-main-script:
     runs-on: ubuntu-latest
