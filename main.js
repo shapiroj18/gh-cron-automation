@@ -1,3 +1,7 @@
 #!/usr/bin/env node
 
-console.log('hello world')
+let currentDate = new Date();
+let currentTime = currentDate.getHours() + ':' + currentDate.getMinutes() + ':' + currentDate.getSeconds()
+
+
+console.log(currentTime)
