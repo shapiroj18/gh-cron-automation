@@ -1,5 +1,5 @@
 name: scheduled-test-time
-'on':
+on:
   schedule:
     - cron:  '*/15 * * * *'
 
