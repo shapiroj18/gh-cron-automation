@@ -1,7 +1,7 @@
 name: scheduled-test-time
 on:
   schedule:
-    - cron:  '* * * * *'
+    - cron:  '*/15 * * * *'
 
 jobs:
   run-main-script:
